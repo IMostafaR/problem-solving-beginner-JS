@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Assignment-7</title>
+    <!-- BOOTSTRAP STYLESHEET FILE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="text-center my-5">JS Assignment 7</h1>
+      <section id="q1">
+        <h2>Answer 1</h2>
+        <p>Enter any Number</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qOne"
+            placeholder="num
+          "
+          />
+          <label for="qOne">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputOne()">
+          Submit answer 1
+        </button>
+        <div id="contentOne"></div>
+      </section>
+      <hr />
+      <section id="q2">
+        <h2>Answer 2</h2>
+        <p>Check if a number could be divided by 3 and 4</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwo"
+            placeholder="num
+          "
+          />
+          <label for="qTwo">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputTwo()">
+          Submit answer 2
+        </button>
+        <div id="contentTwo"></div>
+      </section>
+      <hr />
+      <section id="q3">
+        <h2>Answer 3</h2>
+        <p>Guess and check which number is bigger than the other</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qThreeA"
+            placeholder="num
+          "
+          />
+          <label for="qThreeA">Please enter the first number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qThreeB"
+            placeholder="num
+          "
+          />
+          <label for="qThreeB">Please enter the second number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputThree()">
+          Submit answer 3
+        </button>
+        <div id="contentThree"></div>
+      </section>
+      <hr />
+      <section id="q4">
+        <h2>Answer 4</h2>
+        <p>check if the number has a positive or a negative value</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFour"
+            placeholder="num
+          "
+          />
+          <label for="qFour">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputFour()">
+          Submit answer 4
+        </button>
+        <div id="contentFour"></div>
+      </section>
+      <hr />
+      <section id="q5">
+        <h2>Answer 5</h2>
+        <p>Guess and check the max and min number</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFiveA"
+            placeholder="num
+          "
+          />
+          <label for="qFiveA">Please enter the first number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFiveB"
+            placeholder="num
+          "
+          />
+          <label for="qFiveB">Please enter the second number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFiveC"
+            placeholder="num
+          "
+          />
+          <label for="qFiveC">Please enter the third number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputFive()">
+          Submit answer 5
+        </button>
+        <div id="contentFive"></div>
+      </section>
+      <hr />
+      <section id="q6">
+        <h2>Answer 6</h2>
+        <p>check if the number is odd or even</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qSix"
+            placeholder="num
+          "
+          />
+          <label for="qSix">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputSix()">
+          Submit answer 6
+        </button>
+        <div id="contentSix"></div>
+      </section>
+      <hr />
+      <section id="q7">
+        <h2>Answer 7</h2>
+        <p>check if the letter is a vowel letter or a constant letter</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qSeven"
+            placeholder="num
+          "
+          />
+          <label for="qSeven">Please enter a letter</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputSeven()">
+          Submit answer 7
+        </button>
+        <div id="contentSeven"></div>
+      </section>
+      <hr />
+      <section id="q8">
+        <h2>Answer 8</h2>
+        <p>
+          Enter any number and submit to trigger the program to create a
+          dropdown menu from 1 to that number
+        </p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qEight"
+            placeholder="num
+          "
+          />
+          <label for="qEight">Please enter a letter</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputEight()">
+          Submit to create dropdown menu
+        </button>
+        <select
+          value=""
+          id="dMenu"
+          class="px-4 rounded-2 bg-success text-white"
+        ></select>
+        <div id="contentEight"></div>
+      </section>
+      <hr />
+      <section id="q9">
+        <h2>Answer 9</h2>
+        <p>
+          Enter any number and submit to trigger the program to create a
+          dropdown menu from 1 to that number
+        </p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qNine"
+            placeholder="num
+          "
+          />
+          <label for="qNine">Please enter a valid Number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputNine()">
+          Submit to create multiplication table up to 12
+        </button>
+        <table value="" id="contentNine"></table>
+      </section>
+      <hr />
+      <section id="q10">
+        <h2>Answer 10</h2>
+        <p>Enter any number and submit to how all even numbers to your input</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTen"
+            placeholder="num
+          "
+          />
+          <label for="qTen">Please enter a valid Number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputTen()">
+          Submit to show all even numbers to your input
+        </button>
+        <table value="" id="contentTen"></table>
+      </section>
+      <hr />
+      <section id="q11">
+        <h2>Answer 11</h2>
+        <p>Calculate the power</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qElevenA"
+            placeholder="num
+          "
+          />
+          <label for="qElevenA">Please enter the a number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qElevenB"
+            placeholder="num
+          "
+          />
+          <label for="qElevenB">Please enter the exponent</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputEleven()">
+          Submit answer 11
+        </button>
+        <div id="contentEleven"></div>
+      </section>
+      <hr />
+      <section id="q12">
+        <h2>Answer 12</h2>
+        <p>Enter the marks fo five subjects</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwelveA"
+            placeholder="num
+          "
+          />
+          <label for="qTwelveA">Please enter the mark of subject 1</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwelveB"
+            placeholder="num
+          "
+          />
+          <label for="qTwelveB">Please enter the mark of subject 2</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwelveC"
+            placeholder="num
+          "
+          />
+          <label for="qTwelveC">Please enter the mark of subject 3</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwelveD"
+            placeholder="num
+          "
+          />
+          <label for="qTwelveD">Please enter the mark of subject 4</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwelveE"
+            placeholder="num
+          "
+          />
+          <label for="qTwelveE">Please enter the mark of subject 5</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputTwelve()">
+          Submit to calculate
+        </button>
+        <div id="contentTwelve"></div>
+      </section>
+      <hr />
+      <section id="q13">
+        <h2>Answer 13</h2>
+        <p>Enter any month number to show its number of days</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qThirteen"
+            placeholder="num
+          "
+          />
+          <label for="qThirteen">Please enter any month number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputThirteen()">
+          Submit to show number of days
+        </button>
+        <table value="" id="contentThirteen"></table>
+      </section>
+      <hr />
+      <section id="q14">
+        <h2>Answer 14</h2>
+        <p>Enter the marks fo five subjects</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFourteenA"
+            placeholder="num
+          "
+          />
+          <label for="qFourteenA">Please enter the mark of Physics</label>
+        </div>
+        <button class="btn btn-primary mb-3" onclick="getInputFourteenA()">
+          Submit to calculate Physics grads
+        </button>
+        <div id="contentFourteenA"></div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFourteenB"
+            placeholder="num
+          "
+          />
+          <label for="qFourteenB">Please enter the mark of Chemistry</label>
+        </div>
+        <button class="btn btn-primary mb-3" onclick="getInputFourteenB()">
+          Submit to calculate Chemistry grads
+        </button>
+        <div id="contentFourteenB"></div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFourteenC"
+            placeholder="num
+          "
+          />
+          <label for="qFourteenC">Please enter the mark of Biology</label>
+        </div>
+        <button class="btn btn-primary mb-3" onclick="getInputFourteenC()">
+          Submit to calculate Biology grads
+        </button>
+        <div id="contentFourteenC"></div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFourteenD"
+            placeholder="num
+          "
+          />
+          <label for="qFourteenD">Please enter the mark of Mathematics</label>
+        </div>
+        <button class="btn btn-primary mb-3" onclick="getInputFourteenD()">
+          Submit to calculate Mathematics grads
+        </button>
+        <div id="contentFourteenD"></div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFourteenE"
+            placeholder="num
+          "
+          />
+          <label for="qFourteenE">Please enter the mark of Computer</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputFourteenE()">
+          Submit to calculate Computer grads
+        </button>
+        <div id="contentFourteenE"></div>
+      </section>
+      <hr />
+      <h3 class="text-center mb-3">Using switch case</h3>
+      <hr />
+      <section id="q15">
+        <h2>Answer 15</h2>
+        <p>Enter any month number to show its number of days</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qFifteen"
+            placeholder="num
+          "
+          />
+          <label for="qFifteen">Please enter any month number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputFifteen()">
+          Submit to show number of days
+        </button>
+        <table value="" id="contentFifteen"></table>
+      </section>
+      <hr />
+      <section id="q16">
+        <h2>Answer 16</h2>
+        <p>check if the letter is a vowel letter or a constant letter</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qSixteen"
+            placeholder="num
+          "
+          />
+          <label for="qSixteen">Please enter a letter</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputSixteen()">
+          Submit answer 16
+        </button>
+        <div id="contentSixteen"></div>
+      </section>
+      <hr />
+      <section id="q17">
+        <h2>Answer 17</h2>
+        <p>Guess and check which number is bigger than the other</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qSeventeenA"
+            placeholder="num
+          "
+          />
+          <label for="qSeventeenA">Please enter the first number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qSeventeenB"
+            placeholder="num
+          "
+          />
+          <label for="qSeventeenB">Please enter the second number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputSeventeen()">
+          Submit answer 17
+        </button>
+        <div id="contentSeventeen"></div>
+      </section>
+      <hr />
+      <section id="q18">
+        <h2>Answer 18</h2>
+        <p>check if the number is odd or even</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qEighteen"
+            placeholder="num
+          "
+          />
+          <label for="qEighteen">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputEighteen()">
+          Submit answer 18
+        </button>
+        <div id="contentEighteen"></div>
+      </section>
+      <hr />
+      <section id="q19">
+        <h2>Answer 19</h2>
+        <p>check if the number has a positive or a negative value</p>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qNineteen"
+            placeholder="num
+          "
+          />
+          <label for="qNineteen">Please enter a valid number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputNineteen()">
+          Submit answer 19
+        </button>
+        <div id="contentNineteen"></div>
+      </section>
+      <hr />
+      <section id="q20">
+        <h2>Answer 20</h2>
+        <p>Guess and check which number is bigger than the other</p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwentyA"
+            placeholder="num
+          "
+          />
+          <label for="qTwentyA">Please enter the first number</label>
+        </div>
+        <div class="mb-3">
+          <select
+            value=""
+            id="operators"
+            class="px-4 rounded-2 bg-success text-white"
+          >
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+          </select>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control w-50"
+            id="qTwentyB"
+            placeholder="num
+          "
+          />
+          <label for="qTwentyB">Please enter the second number</label>
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="getInputTwenty()">
+          Calculate
+        </button>
+        <div id="contentTwenty"></div>
+      </section>
+    </main>
+    <footer class="text-center my-5">
+      <h4>End of Assignment 7</h4>
+      <p>
+        by
+        <a href="#" class="text-decoration-none text-danger">Mostafa Ragab</a>
+      </p>
+    </footer>
+
+    <!-- J A V A S C R I P T -->
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
