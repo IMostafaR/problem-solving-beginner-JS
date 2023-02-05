@@ -10,11 +10,11 @@ function getInputOne() {
     // using Object.is to check inputOne is NaN or not https://medium.com/coding-in-simple-english/how-to-check-for-nan-in-javascript-4294e555b447#:~:text=In%20JavaScript%2C%20the%20best%20way,NaN%20will%20always%20return%20true%20.
     // inputOne.value.length == 0 to check if the input is empty
     contentOne += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentOne").innerHTML = contentOne;
 
-    // window.alert("INVALID INPUT. Please Inter a VALID number");
+    // window.alert("INVALID INPUT. Please Enter a VALID number");
   } else {
     console.log(inputOne.value);
     contentOne +=
@@ -42,7 +42,7 @@ function getInputTwo() {
 
   if (Object.is(Number(inputTwo.value), NaN) || inputTwo.value.length == 0) {
     contentTwo += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentTwo").innerHTML = contentTwo;
   } else if (Number(inputTwo.value) == 0) {
@@ -100,7 +100,7 @@ function getInputThree() {
     inputThreeB.value.length == 0
   ) {
     contentThree += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentThree").innerHTML = contentThree;
   } else if (Number(inputThreeA.value) == Number(inputThreeB.value)) {
@@ -159,7 +159,7 @@ function getInputFour() {
 
   if (Object.is(Number(inputFour.value), NaN) || inputFour.value.length == 0) {
     contentFour += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFour").innerHTML = contentFour;
   } else if (Number(inputFour.value) == 0) {
@@ -217,7 +217,7 @@ function getInputFive() {
     inputFiveC.value.length == 0
   ) {
     contentFive += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFive").innerHTML = contentFive;
   } else {
@@ -252,7 +252,7 @@ function getInputSix() {
 
   if (Object.is(Number(inputSix.value), NaN) || inputSix.value.length == 0) {
     contentSix += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentSix").innerHTML = contentSix;
   } else if (Number(inputSix.value) == 0) {
@@ -307,7 +307,7 @@ function getInputSeven() {
     inputSeven.value.length == 0
   ) {
     contentSeven += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a single letter!
+    &#x274C;	INVALID INPUT. Please Enter a single letter!
   </div>`;
     document.getElementById("contentSeven").innerHTML = contentSeven;
   } else if (
@@ -361,10 +361,10 @@ function getInputEight() {
     inputEight.value.length == 0
   ) {
     contentEight += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentEight").innerHTML = contentEight;
-    // window.alert("INVALID INPUT. Please Inter a VALID number");
+    // window.alert("INVALID INPUT. Please Enter a VALID number");
   } else {
     for (var i = 1; i < Number(inputEight.value) + 1; i++) {
       dorpDown += "<option>" + i + "</option>";
@@ -393,7 +393,7 @@ function getInputNine() {
   var contentNine = "";
   if (Object.is(Number(inputNine.value), NaN) || inputNine.value.length == 0) {
     contentNine += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentNine").innerHTML = contentNine;
   } else {
@@ -429,7 +429,7 @@ function getInputTen() {
   var contentTen = "";
   if (Object.is(Number(inputTen.value), NaN) || inputTen.value.length == 0) {
     contentTen += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentTen").innerHTML = contentTen;
   } else {
@@ -464,7 +464,7 @@ function getInputEleven() {
     inputElevenB.value.length == 0
   ) {
     contentEleven += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentEleven").innerHTML = contentEleven;
   } else {
@@ -511,7 +511,7 @@ function getInputTwelve() {
     inputTwelveE.value.length == 0
   ) {
     contentTwelve += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentTwelve").innerHTML = contentTwelve;
   } else {
@@ -581,7 +581,7 @@ function getInputThirteen() {
     inputThirteen.value > 12
   ) {
     contentThirteen += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentThirteen").innerHTML = contentThirteen;
   } else if (inputThirteen.value == 1) {
@@ -704,7 +704,7 @@ function getInputFourteenA() {
     inputFourteenA.value > 100
   ) {
     contentFourteenA += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFourteenA").innerHTML = contentFourteenA;
   } else if (inputFourteenA.value >= 90) {
@@ -755,7 +755,7 @@ function getInputFourteenB() {
     inputFourteenB.value > 100
   ) {
     contentFourteenB += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFourteenB").innerHTML = contentFourteenB;
   } else if (inputFourteenB.value >= 90) {
@@ -806,7 +806,7 @@ function getInputFourteenC() {
     inputFourteenC.value > 100
   ) {
     contentFourteenC += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFourteenC").innerHTML = contentFourteenC;
   } else if (inputFourteenC.value >= 90) {
@@ -857,7 +857,7 @@ function getInputFourteenD() {
     inputFourteenD.value > 100
   ) {
     contentFourteenD += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFourteenD").innerHTML = contentFourteenD;
   } else if (inputFourteenD.value >= 90) {
@@ -908,7 +908,7 @@ function getInputFourteenE() {
     inputFourteenE.value > 100
   ) {
     contentFourteenE += `<div class="alert alert-danger" role="alert">
-    &#x274C;	INVALID INPUT. Please Inter a VALID number!
+    &#x274C;	INVALID INPUT. Please Enter a VALID number!
   </div>`;
     document.getElementById("contentFourteenE").innerHTML = contentFourteenE;
   } else if (inputFourteenE.value >= 90) {
@@ -1072,7 +1072,7 @@ function getInputFifteen() {
 
     default:
       contentFifteen += `<div class="alert alert-danger" role="alert">
-      &#x274C;	INVALID INPUT. Please Inter a VALID number!
+      &#x274C;	INVALID INPUT. Please Enter a VALID number!
       </div>`;
       document.getElementById("contentFifteen").innerHTML = contentFifteen;
       break;
@@ -1121,7 +1121,7 @@ function getInputSixteen() {
       ) {
         case true:
           contentSixteen += `<div class="alert alert-danger" role="alert">
-          &#x274C;	INVALID INPUT. Please Inter a single letter!
+          &#x274C;	INVALID INPUT. Please Enter a single letter!
         </div>`;
           document.getElementById("contentSixteen").innerHTML = contentSixteen;
           break;
@@ -1215,7 +1215,7 @@ function getInputSeventeen() {
 
             default:
               contentSeventeen += `<div class="alert alert-danger" role="alert">
-            &#x274C;	INVALID INPUT. Please Inter a VALID number!
+            &#x274C;	INVALID INPUT. Please Enter a VALID number!
           </div>`;
               document.getElementById("contentSeventeen").innerHTML =
                 contentSeventeen;
@@ -1258,7 +1258,7 @@ function getInputEighteen() {
       ) {
         case true:
           contentEighteen += `<div class="alert alert-danger" role="alert">
-          &#x274C;	INVALID INPUT. Please Inter a VALID number!
+          &#x274C;	INVALID INPUT. Please Enter a VALID number!
         </div>`;
           document.getElementById("contentEighteen").innerHTML =
             contentEighteen;
@@ -1312,7 +1312,7 @@ function getInputNineteen() {
       ) {
         case true:
           contentNineteen += `<div class="alert alert-danger" role="alert">
-          &#x274C;	INVALID INPUT. Please Inter a VALID number!
+          &#x274C;	INVALID INPUT. Please Enter a VALID number!
         </div>`;
           document.getElementById("contentNineteen").innerHTML =
             contentNineteen;
@@ -1373,7 +1373,7 @@ function getInputTwenty() {
   ) {
     case true:
       contentTwenty += `<div class="alert alert-danger" role="alert">
-      &#x274C;	INVALID INPUT. Please Inter a VALID number!
+      &#x274C;	INVALID INPUT. Please Enter a VALID number!
     </div>`;
       document.getElementById("contentTwenty").innerHTML = contentTwenty;
       break;
